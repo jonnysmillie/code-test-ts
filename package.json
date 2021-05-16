@@ -1,0 +1,55 @@
+{
+  "name": "gatsby-starter-default-typescript",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Andy Kenward <hello@andykenward.com>",
+  "dependencies": {
+    "gatsby": "^3.0.0-next.0",
+    "gatsby-image": "^3.5.0",
+    "gatsby-plugin-extract-schema": "^0.0.5",
+    "gatsby-plugin-manifest": "^3.5.0",
+    "gatsby-plugin-react-helmet": "^4.5.0",
+    "gatsby-plugin-sharp": "^3.5.0",
+    "gatsby-source-filesystem": "^3.5.0",
+    "gatsby-transformer-csv": "^3.5.0",
+    "gatsby-transformer-sharp": "^3.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.21.4",
+    "@graphql-codegen/typescript": "^1.22.0",
+    "@graphql-codegen/typescript-operations": "^1.17.16",
+    "@types/react-helmet": "^6.1.1",
+    "prettier": "^2.3.0",
+    "typescript": "^4.2.4"
+  },
+  "keywords": [
+    "gatsby",
+    "typescript"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "npm run type-check",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css}'",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "codegen": "graphql-codegen",
+    "codegen:watch": "graphql-codegen --watch",
+    "postinstall": "gatsby clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andykenward/gatsby-starter-default-typescript"
+  },
+  "bugs": {
+    "url": "https://github.com/andykenward/gatsby-starter-default-typescript/issues"
+  }
+}
